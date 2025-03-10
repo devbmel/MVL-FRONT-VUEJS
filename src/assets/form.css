@@ -1,0 +1,112 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+h1 {
+  font-family: 'Almendra', serif;
+  font-size: 2.5rem;
+  color: #2f3b3b;
+  text-align: center;
+}
+
+.formDiv {
+  background-color: #e2d6cc;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.formDiv form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv div {
+  margin-bottom: 20px;
+}
+
+.formDiv label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2f3b3b;
+}
+
+.formDiv input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #e2d6cc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formDiv input:focus {
+  border-color: #2f3b3b;
+  outline: none;
+}
+
+.formDiv button {
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #a27b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.formDiv button:hover {
+  background-color: #81624a;
+}
+
+@media (max-width: 768px) {
+  .formDiv {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .formDiv input,
+  .formDiv button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .formDiv label {
+    font-size: 0.85rem;
+  }
+  .formDiv div {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .formDiv {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 5px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .formDiv input,
+  .formDiv button {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+  .formDiv label {
+    font-size: 0.8rem;
+  }
+  .formDiv div {
+    margin-bottom: 10px;
+  }
+}
