@@ -1,6 +1,4 @@
-<script>
-import bookServices from '../services/bookServices.js'
-</script>
+<script></script>
 
 <template>
   <main>

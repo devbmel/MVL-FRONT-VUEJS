@@ -3,7 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import ConnexionView from '@/views/ConnexionView.vue'
 import RegisterView from '@/views/RegisterView.vue'
 import LibraryView from '@/views/LibraryView.vue'
-import WishlistView from '@/views/wishlistview.vue'
+import WishlistView from '@/views/WishlistView.vue'
 import { useAuthStore } from '@/stores/authentification'
 import HomePageUserView from '@/views/HomePageUserView.vue'
 
