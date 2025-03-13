@@ -10,7 +10,7 @@
         <article class="card">
           <h3>Titre du livre</h3>
           <div class="bookCover">
-            <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
+            <img src="" alt="couverture du livre" />
           </div>
           <h4>Auteur</h4>
           <h4>Genre</h4>
@@ -28,7 +28,7 @@
         <article class="card">
           <h3>Titre du livre</h3>
           <div class="bookCover">
-            <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
+            <img src="" alt="couverture du livre" />
           </div>
           <h4>Auteur</h4>
           <h4>Genre</h4>
@@ -50,7 +50,7 @@
         <article class="card">
           <h3>Titre du livre</h3>
           <div class="bookCover">
-            <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
+            <img src="" alt="couverture du livre" />
           </div>
           <h4>Auteur</h4>
           <h4>Genre</h4>
@@ -68,7 +68,7 @@
         <article class="card">
           <h3>Titre du livre</h3>
           <div class="bookCover">
-            <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
+            <img src="" alt="couverture du livre" />
           </div>
           <h4>Auteur</h4>
           <h4>Genre</h4>
@@ -85,7 +85,7 @@
         <article class="card">
           <h3>Titre du livre</h3>
           <div class="bookCover">
-            <img src="/asset/images/livre1.jpg" alt="couverture du livre" />
+            <img src="" alt="couverture du livre" />
           </div>
           <h4>Auteur</h4>
           <h4>Genre</h4>

@@ -1,30 +1,30 @@
-<script setup>
-import '@/assets/form.css'
-</script>
-
 <template>
-  <main>
-    <h1>Se connecter</h1>
-    <div class="formDiv">
-      <form id="connexionForm">
-        <div>
-          <label for="username">Nom d'utilisateur :</label>
-          <input type="text" id="username" name="username" pattern="[a-zA-ZÀ-ÿ]+" required />
-        </div>
-
-        <div>
-          <label for="password">Mot de passe :</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            pattern="/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{8,}$/"
-            required
-          />
-        </div>
-
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-  </main>
+  <div>
+    <h2>Login</h2>
+    <form @submit.prevent="handleLogin">
+      <input v-model="email" type="email" placeholder="email" required />
+      <input v-model="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/authentification'
+const authStore = useAuthStore()
+const email = ref('')
+const password = ref('')
+const router = useRouter()
+
+const handleLogin = async () => {
+  try {
+    await authStore.login(email.value, password.value)
+    router.push('/homePage')
+  } catch (error) {
+    console.error(error)
+    alert('Login failed')
+  }
+}
+</script>
